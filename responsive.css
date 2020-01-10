@@ -1,0 +1,12 @@
+@media (max-width:670px) {
+  .work ul {
+    display: block;
+    width: 100%;
+  }
+
+  .work ul li {
+    width: 80%;
+    margin: 0 auto;
+
+  }
+}

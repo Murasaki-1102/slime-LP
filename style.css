@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'myfont';
+  src: url('./font/misaki_gothic_2nd.ttf') format('truetype');
+}
+
+/*========= base ===========*/
+* {
+  box-sizing: border-box;
+  font-family: 'myfont', sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0 2rem;
+  padding: 0 2rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 2.0;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0 0 1em 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  transition: .3s;
+  opacity: 0.6;
+}
+
+section {
+  margin-bottom: 10rem;
+}
+
+.section-title {
+  font-size: 5rem;
+  text-align: center;
+  margin: 3rem;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+}
+
+header h1 {
+  padding-left: 3rem;
+}
+
+.header-nav {
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-right: 5rem;
+}
+
+.mv {
+  position: relative;
+  height: 60rem;
+  margin-top: 6rem;
+}
+
+.mv::before {
+  content: '';
+  background: #70deff;
+  position: absolute;
+  width: 45%;
+  height: 700px;
+  top: -18%;
+  left: 0;
+  z-index: -1;
+}
+
+.mv img {
+  width: 70%;
+  height: 50rem;
+  object-fit: cover;
+  margin-left: 30%;
+}
+
+.mv .mv-content {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.6);
+  font-size: 6rem;
+  padding: 1rem;
+}
+
+.mv .nes-btn {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background: rgba(0, 0, 255, 0.6);
+  font-size: 5rem;
+
+}
+
+.greeting .contents {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.greeting .contents figure {
+  width: 50%;
+}
+
+.greeting .content {
+  width: 48%;
+  font-size: 3rem;
+}
+
+.work {
+  width: 100%;
+  position: relative;
+}
+
+.work::before {
+  content: '';
+  background: #70deff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.work h2 {
+
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.work ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.work ul li {
+  width: 100%;
+  margin: 3rem;
+}
+
+.work ul li figure {
+  margin: 0;
+}
+
+.work ul li figure img {
+  width: 300px;
+  height: 300px;
+}
+
+.work h3 {
+  text-align: center;
+}
+
+.news .content-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 18rem;
+}
+
+.news li {
+  border-bottom: dotted 1px #dedede;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.news li a {
+  color: #333;
+}
+
+.news li a:hover {
+  opacity: 0.6;
+}
+
+.news li time {
+  font-size: 0.75em;
+  color: #949494;
+  padding-right: 0px;
+  margin-right: 8rem;
+}
+
+.download {
+  position: relative;
+}
+
+.download::before {
+  content: '';
+  background: #70deff;
+  position: absolute;
+  width: 45%;
+  height: 60rem;
+  top: -20%;
+  right: 0;
+  z-index: -1;
+}
+
+.download-img img {
+  width: 80%;
+  height: 40re, ;
+  margin-right: 20%;
+  object-fit: cover;
+}
+
+.download-img::after {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.download h2 {
+  position: absolute;
+  top: 60%;
+  right: 49%;
+  width: 25rem;
+  height: 6rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.adress ul li {
+  margin-right: 10px;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 40px;
+}
+
+.copylight p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0 -2rem;
+  line-height: 100px;
+  color: #333;
+  background-color: #e8e7e7;
+}
